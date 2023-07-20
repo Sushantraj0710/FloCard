@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>FlipList -FloCard</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../favicon.ico">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="../assets/vendor/icon-set/style.css">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="../assets/css/theme.min.css">
+  <link id="styleThemes" rel="stylesheet" href="../assets/css/theme-dark.min.css" as="style">
+</head>
+
+<body class="has-navbar-vertical-aside navbar-vertical-aside-show-xl">
+
+  <!-- ========== HEADER ========== -->
+  <header id="header"
+    class="navbar navbar-expand-lg navbar-fixed navbar-height navbar-flush navbar-container navbar-bordered">
+    <div class="navbar-nav-wrap">
+      <div class="navbar-brand-wrapper">
+        <!-- Logo -->
+        <a class="navbar-brand" href="../index.html" aria-label="Front">
+          <img class="navbar-brand-logo" src="../assets/svg/logos/Group_625937.svg" alt="Logo">
+          <img class="navbar-brand-logo-mini" src="../assets/svg/logos/Group_625937.svg" alt="Logo">
+        </a>
+        <!-- End Logo -->
+      </div>
+
+      <div class="navbar-nav-wrap-content-left">
+        <!-- Navbar Vertical Toggle -->
+        <button type="button" class="js-navbar-vertical-aside-toggle-invoker close mr-3">
+          <i class="tio-first-page navbar-vertical-aside-toggle-short-align" data-toggle="tooltip"
+            data-placement="right" title="Collapse"></i>
+          <i class="tio-last-page navbar-vertical-aside-toggle-full-align"
+            data-template='<div class="tooltip d-none d-sm-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>'
+            data-toggle="tooltip" data-placement="right" title="Expand"></i>
+        </button>
+        <!-- End Navbar Vertical Toggle -->
+      </div>
+      <!-- Secondary Content -->
+      <div class="navbar-nav-wrap-content-right">
+        <!-- Navbar -->
+        <ul class="navbar-nav align-items-center flex-row">
+          <li class="nav-item">
+            <!-- Account -->
+            <div class="hs-unfold">
+              <a class="js-hs-unfold-invoker navbar-dropdown-account-wrapper" href="javascript:;"
+                data-hs-unfold-options='{
+                   "target": "#accountNavbarDropdown",
+                   "type": "css-animation"
+                 }'>
+                <div class="avatar avatar-sm avatar-circle">
+                  <img class="avatar-img" src="../assets/img/160x160/img6.jpg" alt="Image Description">
+                  <span class="avatar-status avatar-sm-status avatar-status-success"></span>
+                </div>
+              </a>
+
+              <div id="accountNavbarDropdown"
+                class="hs-unfold-content dropdown-unfold dropdown-menu dropdown-menu-right navbar-dropdown-menu navbar-dropdown-account"
+                style="width: 16rem;">
+                <div class="dropdown-item-text">
+                  <div class="media align-items-center">
+                    <div class="avatar avatar-sm avatar-circle mr-2">
+                      <img class="avatar-img" src="../assets/img/160x160/img6.jpg" alt="Image Description">
+                    </div>
+                    <div class="media-body">
+                      <span class="card-title h5">Sushant Raj</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">
+                  <span class="text-truncate pr-2" title="Sign out">Sign out</span>
+                </a>
+              </div>
+            </div>
+            <!-- End Account -->
+          </li>
+        </ul>
+        <!-- End Navbar -->
+      </div>
+      <!-- End Secondary Content -->
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <!-- Navbar Vertical -->
+  <aside
+    class="js-navbar-vertical-aside navbar navbar-vertical-aside navbar-vertical navbar-vertical-fixed navbar-expand-xl navbar-bordered  ">
+    <div class="navbar-vertical-container">
+      <div class="navbar-vertical-footer-offset">
+        <div class="navbar-brand-wrapper justify-content-between">
+          <!-- Logo -->
+
+
+          <a class="navbar-brand" href="../index.html" aria-label="Front">
+            <img class="navbar-brand-logo" src="../assets/svg/logos/Group_625937.svg" alt="Logo">
+            <img class="navbar-brand-logo-mini" src="../assets/svg/logos/logo-short.svg" alt="Logo">
+          </a>
+
+          <!-- End Logo -->
+
+          <!-- Navbar Vertical Toggle -->
+          <button type="button"
+            class="js-navbar-vertical-aside-toggle-invoker navbar-vertical-aside-toggle btn btn-icon btn-xs btn-ghost-dark">
+            <i class="tio-clear tio-lg"></i>
+          </button>
+          <!-- End Navbar Vertical Toggle -->
+        </div>
+
+        <!-- Content -->
+        <div class="navbar-vertical-content">
+          <ul class="navbar-nav navbar-nav-lg nav-tabs">
+            <!-- Dashboards -->
+            <div class="wellcome-user ml-5">
+              <span>
+                Welcome
+              </span>
+              <br>
+              <span>SUSHANT RAJ</span>
+              <br>
+              <span>@TERMINATOR_T_1000</span>
+
+            </div>
+
+            <li class="nav-item">
+              <div class="nav-divider"></div>
+            </li>
+            <!-- My card -->
+            <li class="nav-item ">
+              <a class="js-nav-tooltip-link nav-link " href="#" title="Welcome page" data-placement="left">
+                <i class="tio-home-outlined nav-icon"></i>
+                <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">My Cards</span>
+              </a>
+            </li>
+            <!-- End of my cards -->
+
+            <!-- Exchanges -->
+            <li class="navbar-vertical-aside-has-menu ">
+              <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle " href="javascript:;"
+                title="Exchange">
+                <i class="tio-swap-horizontal nav-icon"></i>
+                <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Exchange</span>
+              </a>
+              
+              <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
+                <li class="nav-item">
+                  <a class="nav-link " href="#" title="Exchange Codes">
+                    <span class="tio-circle nav-indicator-icon"></span>
+                    <span class="text-truncate">Exchange Code</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#" title="Receive Exchanges Codes">
+                    <span class="tio-circle nav-indicator-icon"></span>
+                    <span class="text-truncate">Receive Excgange Code</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!-- End of Exchanges -->
+
+            <!-- My Contacts -->
+            <li class="nav-item ">
+              <a class="js-nav-tooltip-link nav-link " href="#" title="My Contact" data-placement="left">
+                <i class="tio-contact-notebook nav-icon"></i>
+                <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">My Contacts</span>
+              </a>
+            </li>
+            <!-- End of my contacts -->
+
+            <!-- My FloCard ID -->
+            <li class="nav-item ">
+              <a class="js-nav-tooltip-link nav-link " href="../welcome-page.html" title="My FloCard ID"
+                data-placement="left">
+                <i class="tio-qr-code nav-icon"></i>
+                <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">My FloCard ID</span>
+              </a>
+            </li>
+            <!-- End of my archived card -->
+
+            <!-- My FloCard ID -->
+            <li class="nav-item ">
+              <a class="js-nav-tooltip-link nav-link " href="#" title="My Archived Cards" data-placement="left">
+                <i class="tio-archive nav-icon"></i>
+                <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">My Archived Cards</span>
+              </a>
+            </li>
+            <!-- End of my archived card-->
+
+            <!-- Flip List -->
+            <li class="nav-item active">
+              <a class="js-nav-tooltip-link nav-link active" href="#" title="My Archived Cards" data-placement="left">
+                <i class="tio-format-points list-group-icon"></i>
+                <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Flip List</span>
+              </a>
+            </li>
+            <!-- End of Fliplist-->
+
+
+            <!-- My Planters App -->
+            <li class="nav-item ">
+              <a class="js-nav-tooltip-link nav-link " href="#" title="Planters App" data-placement="left">
+                <i class="tio-leaf-diagonal nav-icon"></i>
+                <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Planters App</span>
+              </a>
+            </li>
+            <!-- End of my planters app-->
+
+            <li>
+              <div class="nav-divider"></div>
+            </li>
+            <li class="nav-item">
+              <small class="nav-subtitle" title="Layouts">Upcoming Features</small>
+              <small class="tio-more-horizontal nav-subtitle-replacer"></small>
+            </li>
+            <li>
+              <div class="nav-divider"></div>
+            </li>
+
+            <!-- FAQ's -->
+            <li class="nav-item">
+              <a class="js-nav-tooltip-link nav-link" href="#" title="FAQ's" data-placement="left">
+                <i class="tio-help-outlined nav-icon"></i>
+                <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">FAQ's</span>
+              </a>
+            </li>
+            <!-- End of FAQ's -->
+
+            <!-- FloCard Policies -->
+            <li class="nav-item">
+              <a class="js-nav-tooltip-link nav-link" href="#" title="FloCard Policies" data-placement="left">
+                <i class="tio-book-opened nav-icon"></i>
+                <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">FloCard Policies</span>
+              </a>
+            </li>
+            <!-- End of FloCard Policies -->
+
+            <!-- Support -->
+            <li class="nav-item">
+              <a class="js-nav-tooltip-link nav-link" href="#" title="Support" data-placement="left">
+                <i class="tio-support nav-icon"></i>
+                <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Support</span>
+              </a>
+            </li>
+            <!-- End of Support -->
+
+            <!-- Flocard Guide -->
+            <li class="navbar-vertical-aside-has-menu ">
+              <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle " href="javascript:;"
+                title="FloCard Guide">
+                <i class="tio-swap-horizontal nav-icon"></i>
+                <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">FloCard Guide</span>
+              </a>
+
+              <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
+                <li class="nav-item">
+                  <a class="nav-link " href="#" title="Create New Cards">
+                    <span class="tio-circle nav-indicator-icon"></span>
+                    <span class="text-truncate">Create New Cards</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#" title="Edit Cards">
+                    <span class="tio-circle nav-indicator-icon"></span>
+                    <span class="text-truncate">Edit Cards</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#" title="Exchange FloCards">
+                    <span class="tio-circle nav-indicator-icon"></span>
+                    <span class="text-truncate">Exchange FloCards</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#" title="Claim Alias">
+                    <span class="tio-circle nav-indicator-icon"></span>
+                    <span class="text-truncate">Claim Alias</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#" title="Add tags">
+                    <span class="tio-circle nav-indicator-icon"></span>
+                    <span class="text-truncate">Add tags</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!-- End of Flocard Guide -->
+          </ul>
+        </div>
+        <!-- End Content -->
+
+        <!-- Footer -->
+        <!-- dark mode  -->
+        <div class="navbar-vertical-footer">
+          <ul class="navbar-vertical-footer-list">
+
+            <li class="navbar-vertical-footer-list-item pt-1">
+              <!-- Other Links -->
+              <div id="otherLinksDropdown">
+                <a class="btn btn-icon btn-ghost-secondary rounded-circle">
+                  <i class="tio-brightness-1" id="themeIcon"></i>
+                </a>
+                <script>
+                  const ThemeBTN = document.getElementById("otherLinksDropdown");
+                  const link = document.getElementById("styleThemes");
+                  const themeicon = document.getElementById("themeIcon");
+                  const saved_theme = getCookie("currentTheme");
+
+                  if (saved_theme === "light") {
+                    link.setAttribute("href", "../assets/css/theme.min.css");
+                    themeicon.setAttribute("class", "tio-brightness-1")
+                  } else {
+                    link.setAttribute("href", "../assets/css/theme-dark.min.css");
+                    themeicon.setAttribute("class", "tio-moon")
+                  }
+
+                  ThemeBTN.addEventListener("click", function () {
+                    if (link.getAttribute("href") === "../assets/css/theme-dark.min.css" && themeicon.getAttribute("class") === "tio-brightness-1") {
+                      link.setAttribute("href", "../assets/css/theme.min.css");
+                      themeicon.setAttribute("class", "tio-brightness-1")
+                      setCookie("currentTheme", "light", 7);
+                    } else {
+                      link.setAttribute("href", "/assets/css/theme-dark.min.css");
+                      themeicon.setAttribute("class", "tio-moon");
+                      setCookie("currentTheme", "dark", 7);
+                    }
+                  });
+
+                  function setCookie(name, value, days) {
+                    let expires = "";
+                    if (days) {
+                      const date = new Date();
+                      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                      expires = "; expires=" + date.toUTCString();
+                    }
+                    document.cookie = name + "=" + (value || "") + expires + "; path=/";
+                  }
+
+                  function getCookie(name) {
+                    const value = "; " + document.cookie;
+                    const parts = value.split("; " + name + "=");
+                    if (parts.length === 2) {
+                      return parts.pop().split(";").shift();
+                    }
+                  }
+
+                </script>
+
+
+              </div>
+              <!-- End Other Links -->
+            </li>
+
+            <li class="navbar-vertical-footer-list-item">
+              <p class="font-size-sm mb-0">
+                &copy;
+                <script>document.write(new Date().getFullYear())</script> FloCard
+              </p>
+              <!-- Language -->
+            </li>
+          </ul>
+        </div>
+        <!-- End Footer -->
+      </div>
+    </div>
+  </aside>
+  <!-- End Navbar Vertical -->
+
+  <!-- NO FLIPS-->
+  <!-- Main content to be added -->
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main" class="main">
+    <!-- Content -->
+    <div class="content container-fluid">
+      <section class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+              <!-- Filter -->
+              <div class="row align-items-center mb-5">
+                <div class="col">
+                  <h3 class="mb-0">FlipList</h3>
+                </div>
+                <div class="col-auto" id="navBarItemView">
+                  <!-- Nav -->
+                  <ul class="nav nav-segment" id="connectionsTab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link" id="grid-tab" data-toggle="tab" href="#grid" role="tab" aria-controls="grid"
+                        aria-selected="false" title="Column view">
+                        <i class="tio-column-view-outlined"></i>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" id="list-tab" data-toggle="tab" href="#list" role="tab"
+                        aria-controls="list" aria-selected="true" title="List view">
+                        <i class="tio-agenda-view-outlined"></i>
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- End Nav -->
+                </div>
+              </div>
+              <!-- End Filter -->
+              
+              <!-- Tab Content -->
+              <div class="tab-content" id="connectionsTabContent">
+                <!-- Grid view  -->
+                <div class="tab-pane fade" id="grid" role="tabpanel" aria-labelledby="grid-tab">
+                  <!-- Connections  -->
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-3">
+                    <div class="col mb-3 mb-lg-5">
+                      <!-- Card -->
+                      <div class="card h-100 box-shadow shadow-soft card-hover-shadow">
+                        <div class="card-body card-body-height card-body-centered text-center">
+                          <img class="avatar avatar-xxl mb-3" src="../assets/svg/layouts/FlipList-1.svg" alt="Image Description">
+                          <h3 class="card-text">No New Flips Yet</h3>
+                          <br>
+                          <p class="card-text"><a class="text-success" style="cursor: pointer;">Start sending/receiving Flips.</a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- table or list view  -->
+                <div class="tab-pane fade show active" id="list" role="tabpanel" aria-labelledby="list-tab">
+                  <!-- Card -->
+                  <div class="card">
+                    <!-- Header -->
+                    <div class="card-header">
+                      <div class="row justify-content-between align-items-center flex-grow-1">
+                        <div class="col-12 col-md">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h4 class="card-header-title">Flips</h4>
+                          </div>
+                        </div>
+                        <!-- This can be remove from here as there is no need of search when ther is no flips there  -->
+                        <div class="col-md-auto">
+                          <!-- Filter -->
+                          <div class="row align-items-center">
+                            <div class="col">
+                              <form>
+                                <!-- Search -->
+                                <div class="input-group input-group-merge input-group-flush d-none">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                      <i class="tio-search"></i>
+                                    </div>
+                                  </div>
+                                  <input id="datatableWithFilterSearch" type="search" class="form-control"
+                                    placeholder="Search users" aria-label="Search users">
+                                </div>
+                                <!-- End Search -->
+                              </form>
+                            </div>
+                          </div>
+                          <!-- End Filter -->
+                        </div>
+                        <!-- This can be remove to here as there is no need of search when ther is no flips there  -->
+                      </div>
+                    </div>
+                    <!-- End Header -->
+                    <!-- Body -->
+                    <div class="card-body">
+                      <div class="text-center pt-lg-4">
+                        <img class="img-fluid mb-3" src="../assets/svg/layouts/FlipList-1.svg" alt="No New Flips"
+                          style="max-width: 15rem;">
+                        <p class="card-text">You have no new Flips.</p>
+                        <p class="card-text"><a class="text-success" style="cursor: pointer;">Start sending/receiving Flips.</a></p>
+                      </div>
+                    </div>
+                    <!-- End Body -->
+                  </div>
+                  <!-- End Card -->
+                </div>
+                <!-- End of table or list view  -->
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- End Content -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+  <!-- JS Global Compulsory  -->
+  <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="../assets/vendor/hs-navbar-vertical-aside/hs-navbar-vertical-aside.min.js"></script>
+  <script src="../assets/vendor/hs-unfold/dist/hs-unfold.min.js"></script>
+  <script src="../assets/vendor/hs-form-search/dist/hs-form-search.min.js"></script>
+
+  <!-- JS Front -->
+  <script src="../assets/js/theme.min.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // INITIALIZATION OF NAVBAR VERTICAL NAVIGATION
+      // =======================================================
+      var sidebar = $('.js-navbar-vertical-aside').hsSideNav();
+
+
+      // INITIALIZATION OF TOOLTIP IN NAVBAR VERTICAL MENU
+      // =======================================================
+      $('.js-nav-tooltip-link').tooltip({ boundary: 'window' })
+
+      $(".js-nav-tooltip-link").on("show.bs.tooltip", function (e) {
+        if (!$("body").hasClass("navbar-vertical-aside-mini-mode")) {
+          return false;
+        }
+      });
+
+
+      // INITIALIZATION OF UNFOLD
+      // =======================================================
+      $('.js-hs-unfold-invoker').each(function () {
+        var unfold = new HSUnfold($(this)).init();
+      });
+
+
+      // INITIALIZATION OF FORM SEARCH
+      // =======================================================
+      $('.js-form-search').each(function () {
+        new HSFormSearch($(this)).init()
+      });
+    });
+  </script>
+</body>
+
+</html>
