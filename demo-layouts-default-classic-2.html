@@ -20,7 +20,7 @@
 
   <!-- CSS Front Template -->
   <link rel="stylesheet" href="../assets/css/theme.min.css">
-  <!-- <link id="styleThemes" rel="stylesheet" href="../assets/css/theme-dark.min.css" as="style"> -->
+  <link id="styleThemes" rel="stylesheet" href="../assets/css/theme-dark.min.css" as="style">
   <!-- Datatable CSS -->
   <link rel="stylesheet" href="../assets/vendor/datatables.net.extensions/fixedColumns.dataTables.min.css">
   <!-- End Datatable CSS -->
@@ -323,51 +323,51 @@
                   <a class="btn btn-icon btn-ghost-secondary rounded-circle">
                     <i class="tio-brightness-1" id="themeIcon"></i>
                   </a>
-                  <!-- <script>
-                  const ThemeBTN = document.getElementById("otherLinksDropdown");
-                  const link = document.getElementById("styleThemes");
-                  const themeicon = document.getElementById("themeIcon");
-                  const saved_theme = getCookie("currentTheme");
-
-                  if (saved_theme === "light") {
-                    link.setAttribute("href", "../assets/css/theme.min.css");
-                    themeicon.setAttribute("class", "tio-moon")
-                  } else {
-                    link.setAttribute("href", "../assets/css/theme-dark.min.css");
-                    themeicon.setAttribute("class", "tio-brightness-1")
-                  }
-
-                  ThemeBTN.addEventListener("click", function () {
-                    if (link.getAttribute("href") === "../assets/css/theme-dark.min.css" && themeicon.getAttribute("class") === "tio-brightness-1") {
+                  <script>
+                    const ThemeBTN = document.getElementById("otherLinksDropdown");
+                    const link = document.getElementById("styleThemes");
+                    const themeicon = document.getElementById("themeIcon");
+                    const saved_theme = getCookie("currentTheme");
+  
+                    if (saved_theme === "light") {
                       link.setAttribute("href", "../assets/css/theme.min.css");
-                      themeicon.setAttribute("class", "tio-moon")
-                      setCookie("currentTheme", "light", 7);
+                      themeicon.setAttribute("class", "tio-brightness-1")
                     } else {
                       link.setAttribute("href", "../assets/css/theme-dark.min.css");
-                      themeicon.setAttribute("class", "tio-brightness-1");
-                      setCookie("currentTheme", "dark", 7);
+                      themeicon.setAttribute("class", "tio-moon")
                     }
-                  });
-
-                  function setCookie(name, value, days) {
-                    let expires = "";
-                    if (days) {
-                      const date = new Date();
-                      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-                      expires = "; expires=" + date.toUTCString();
+  
+                    ThemeBTN.addEventListener("click", function () {
+                      if (link.getAttribute("href") === "../assets/css/theme-dark.min.css" && themeicon.getAttribute("class") === "tio-moon") {
+                        link.setAttribute("href", "../assets/css/theme.min.css");
+                        themeicon.setAttribute("class", "tio-brightness-1")
+                        setCookie("currentTheme", "light", 7);
+                      } else {
+                        link.setAttribute("href", "../assets/css/theme-dark.min.css");
+                        themeicon.setAttribute("class", "tio-moon");
+                        setCookie("currentTheme", "dark", 7);
+                      }
+                    });
+  
+                    function setCookie(name, value, days) {
+                      let expires = "";
+                      if (days) {
+                        const date = new Date();
+                        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                        expires = "; expires=" + date.toUTCString();
+                      }
+                      document.cookie = name + "=" + (value || "") + expires + "; path=/";
                     }
-                    document.cookie = name + "=" + (value || "") + expires + "; path=/";
-                  }
-
-                  function getCookie(name) {
-                    const value = "; " + document.cookie;
-                    const parts = value.split("; " + name + "=");
-                    if (parts.length === 2) {
-                      return parts.pop().split(";").shift();
+  
+                    function getCookie(name) {
+                      const value = "; " + document.cookie;
+                      const parts = value.split("; " + name + "=");
+                      if (parts.length === 2) {
+                        return parts.pop().split(";").shift();
+                      }
                     }
-                  }
-
-                </script> -->
+  
+                  </script>
 
 
                 </div>
@@ -496,6 +496,7 @@
                 </div>
               </div>
               <!-- End Modal -->
+
               <!-- Tab Content  -->
               <div class="tab-content" id="connectionsTabContent">
                 <!-- Grid View or Card View  -->
@@ -1396,7 +1397,7 @@
                                                 "fixedColumns": true,
                                                 "isResponsive": false,
                                                 "isShowPaging": false,
-                                                "pageLength": 20,
+                                                "pageLength": 10,
                                                 "pagination": "datatableWithSearch"
                                               }' role="grid" aria-describedby="datatable_info">
                           <thead class="thead-light">
@@ -1984,16 +1985,10 @@
 
     // INITIALIZATION OF DYNAMIC MODAL CARD
     $(document).on('ready', function () {
-      // $(".getpage").click(function () {
-      //   var slides = document.getElementsByTagName("tr");
-      //   var pageNumber = Number(document.querySelector("#datatable_pagination > li.paginate_item.page-item.active > a").innerHTML);
-      //   alert(slides[1].innerHTML)
-      //   alert(slides.length)
-      //   alert(pageNumber+" "+typeof(pageNumber))
-      // });
+      ;
 
 
-      $("tr").click(function () {
+      $(".card-link").click(function () {
         // by default List aria-selected is true (as a string)
         var listAriaSelected = $("#list-tab").attr('aria-selected');
         var gridAriaSelected = $("#grid-tab").attr('aria-selected');
