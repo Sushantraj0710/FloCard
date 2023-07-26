@@ -330,12 +330,12 @@
                   }
 
                   ThemeBTN.addEventListener("click", function () {
-                    if (link.getAttribute("href") === "../assets/css/theme-dark.min.css" && themeicon.getAttribute("class") === "tio-brightness-1") {
+                    if (link.getAttribute("href") === "../assets/css/theme-dark.min.css" && themeicon.getAttribute("class") === "tio-moon") {
                       link.setAttribute("href", "../assets/css/theme.min.css");
                       themeicon.setAttribute("class", "tio-brightness-1")
                       setCookie("currentTheme", "light", 7);
                     } else {
-                      link.setAttribute("href", "/assets/css/theme-dark.min.css");
+                      link.setAttribute("href", "../assets/css/theme-dark.min.css");
                       themeicon.setAttribute("class", "tio-moon");
                       setCookie("currentTheme", "dark", 7);
                     }
@@ -360,8 +360,6 @@
                   }
 
                 </script>
-
-
               </div>
               <!-- End Other Links -->
             </li>
@@ -500,8 +498,7 @@
   </main>
   <!-- ========== END MAIN CONTENT ========== -->
 
-  <!-- ========== SECONDARY CONTENTS ========== -->
-  <!-- ========== END SECONDARY CONTENTS ========== -->
+  
   <!-- JS Global Compulsory  -->
   <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
   <script src="../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
